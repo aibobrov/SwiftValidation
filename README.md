@@ -2,6 +2,8 @@
 
 > Type-safe extendable Swift DSL to validate your objects.
 
+![Swift Version](https://img.shields.io/badge/swift-5.4-brightgreen)
+
 Heavily inspired by Kotlin [valiktor](https://github.com/valiktor/valiktor).
 
 ## Usage
