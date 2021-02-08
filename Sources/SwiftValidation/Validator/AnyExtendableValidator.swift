@@ -1,3 +1,4 @@
+/// Type erasure idiom for ExtendableValidator protocol.
 public struct AnyExtendableValidator<Value, Element>: ExtendableValidator {
     public typealias Extender = (AnyValidator<Element>) -> AnyExtendableValidator<Value, Element>
     private let validation: Validation

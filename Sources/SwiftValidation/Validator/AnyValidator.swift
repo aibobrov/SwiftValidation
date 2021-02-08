@@ -1,3 +1,4 @@
+/// Type erasure idiom for Validator protocol.
 public struct AnyValidator<Value>: Validator {
     private let validation: Validation
 

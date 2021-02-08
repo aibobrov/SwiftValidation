@@ -67,13 +67,13 @@ try validate(user) {
 
 In case of `catchPhrase` is empty the propertyName equals to `company.catchPhrase`
 
-## DisjunctionValidator, ConjuctionValidator
+## DisjunctionValidator, ConjunctionValidator
 
 `DisjunctionValidator` has similar semantic to boolean disjunction operations.
 At least one validator should accept the object to not fail.
 In case of empty validators validation does nothing.
 
-`ConjuctionValidator` has similar semantic to boolean conjuction operations.
+`ConjunctionValidator` has similar semantic to boolean conjunction operations.
 All validators should accept the object to not fail.
 In case of empty validators validation does nothing.
 

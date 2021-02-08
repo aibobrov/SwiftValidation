@@ -1,7 +1,12 @@
+/// Complex validator implemented the disjunction semantic of validation: to accept the value it should be accepted at least by one of the inner validator.
+/// To add a new validator to the new validators use the method `extended` that creates a new validator with same behaviour and appended new validator.
+/// In case of inner validators are empty does nothing.
 public struct DisjunctionValidator<Value>: ExtendableValidator {
     public typealias Element = Value
     public let validators: [AnyValidator<Value>]
 
+    /// Create validator with the disjunction semantic of validation.
+    /// - Parameter validators: Inner validators
     public init(_ validators: [AnyValidator<Value>]) {
         self.validators = validators
     }

@@ -12,3 +12,6 @@ excluded:
 
 force_cast:
   severity: warning
+
+line_length: 
+  ignores_comments: true

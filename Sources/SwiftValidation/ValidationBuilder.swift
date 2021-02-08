@@ -1,5 +1,6 @@
 import Foundation
 
+/// Validation DSL
 @resultBuilder
 public struct ValidationBuilder<Value> {
     public typealias Component = [AnyValidator<Value>]
