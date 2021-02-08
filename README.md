@@ -1,3 +1,3 @@
 # SwiftValidation
 
-A description of this package.
+Swift DSL to validate your objects.
