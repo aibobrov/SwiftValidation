@@ -1,11 +1,11 @@
-/// Complex validator implemented the conjunction semantic of validation: to accept the value it should be accepted by all the inner validators.
+/// Complex validator implemented the conjunction semantics of validation: to accept the value it should be accepted by all the inner validators.
 /// To add a new validator to the new validators use the method `extended` that creates a new validator with same behaviour and appended new validator.
 /// In case of inner validators are empty does nothing.
 public struct ConjunctionValidator<Value>: ExtendableValidator {
     public typealias Element = Value
     public let validators: [AnyValidator<Value>]
 
-    /// Create validator with the conjunction semantic of validation.
+    /// Create validator with the conjunction semantics of validation.
     /// - Parameter validators: Inner validators
     public init(_ validators: [AnyValidator<Value>]) {
         self.validators = validators

@@ -6,6 +6,11 @@
 
 Heavily inspired by Kotlin [valiktor](https://github.com/valiktor/valiktor).
 
+Swift 5.4 DSL to create a validator for the value.
+
+DSL begins with two top level functions `validate` and `validateAny` that conjunction and disjunction sematnics model.
+In case of a validation failure `ValidationError` error will be thrown.
+
 ## Usage
 
 ```swift
@@ -34,7 +39,7 @@ XCTAssertNoThrow {
 // In your `Package.swift`
 
 dependencies: [
-    .package(name: "SwiftValidation", url: "https://github.com/artbobrov/SwiftValidation", ...),
+    .package(url: "https://github.com/artbobrov/SwiftValidation", .branch("main")),
     ...
 ],
 targets: [
