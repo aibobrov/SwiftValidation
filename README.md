@@ -70,7 +70,7 @@ try validate(user) {
 }
 ```
 
-In case of `catchPhrase` is empty the propertyName equals to `company.catchPhrase`
+In case of empty `catchPhrase` the propertyName equals to `company.catchPhrase`
 
 ## DisjunctionValidator, ConjunctionValidator
 
